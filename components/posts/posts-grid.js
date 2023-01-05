@@ -6,7 +6,7 @@ const PostsGrid = ({ posts }) => {
     <>
       <ul className={classes.grid}>
         {posts.map((post) => (
-          <PostItem />
+          <PostItem {...posts} />
         ))}
       </ul>
     </>
