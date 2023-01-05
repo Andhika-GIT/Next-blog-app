@@ -6,7 +6,7 @@ const PostsGrid = ({ posts }) => {
     <>
       <ul className={classes.grid}>
         {posts.map((post) => (
-          <PostItem {...posts} />
+          <PostItem key={post.slug} {...post} />
         ))}
       </ul>
     </>
