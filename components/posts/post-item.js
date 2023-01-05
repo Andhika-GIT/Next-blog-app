@@ -13,9 +13,12 @@ const PostItem = ({ title, image, excerpt, date, slug }) => {
   // format the image path
   const imagePath = `/image/posts/${slug}/${image}`;
 
+  // format the link href path
+  const linkPath = `/posts/${slug}`;
+
   return (
     <li className={classes.post}>
-      <Link>
+      <Link href={linkPath}>
         <div className={classes.image}>
           <Image src={imagePath} alt={title} width={300} height={200} />
         </div>
